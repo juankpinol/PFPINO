@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+
+        <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <title>Contacto</title>
+
+        <!-- Icono que se muestra en la pestaña del navegador -->
+    <link rel="icon" href="../multimedia/img/favicon.png" type="image/x-icon">
+
+        <!-- Enlace al archivo CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <!-- Enlace a la biblioteca de íconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+        <!-- Enlace a tu archivo de estilos personalizados -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
+        <!-- Barra de navegación -->
     <nav class="nav">
         <div class="nav__container">
             <i class="fas fa-tools"></i>
@@ -19,28 +31,34 @@
         </div>
     </nav>
 
+        <!-- Encabezado de la página -->
     <header class="header__container">
         <div class="header__titulo">
             <h1 class="header__texto">Deco Raw</h1>
         </div>
     </header>
 
+        <!-- Animación -->
     <div class="animation">
         <div class="subrallado"></div>
     </div>
 
+        <!-- Sección central -->
     <section class="central__container">
         <div class="central__textos">
             <h2 class="central__titulo">Contacto</h2>
             <p class="central__parrafo">Una vez hayas seleccionado tus módulos, ¡estarás listo para crear el mueble modular de tus sueños!.</p>
-            <h2 class="central__textos">¡Diseñemos juntos!</h2>
+            <h3 class="central__textos">¡Diseñemos juntos!</h3>
             <p>Estamos aquí para ayudarte a crear el mueble perfecto. Nuestro equipo de diseñadores está listo para trabajar contigo en cada paso del proceso. ¡Contáctanos hoy mismo y hagamos realidad tu visión!</p>
-            <div class="central__mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.6437879674563!2d-71.54708322321311!3d-32.934008371252325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689c2cadaf96e83%3A0xc7df4017e5e862aa!2zQXJlbmFsZXMsIENvbmPDs24sIFZhbHBhcmHDrXNv!5e0!3m2!1ses-419!2scl!4v1691983288082!5m2!1ses-419!2scl" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Mapa de Google con ubicación -->
+            <div class="central__mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.6437879674563!2d-71.54708322321311!3d-32.934008371252325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689c2cadaf96e83%3A0xc7df4017e5e862aa!2zQXJlbmFsZXMsIENvbmPDs24sIFZhbHBhcmHDrXNv!5e0!3m2!1ses-419!2scl!4v1691983288082!5m2!1ses-419!2scl" width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
+        <!-- Formulario de contacto -->
     <div class="formulario">
+        <h4>Formulario de Contacto</h4>
         <form action="procesar_formulario.php" method="post">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -55,24 +73,29 @@
           </form>
 </div>
     
-
+    <!-- Pie de página -->
     <footer class="footer__container">
         <div class="footer__div">
+            <!-- Información de contacto -->
           <li class="footer__lista"><i class="fas fa-map-marker-alt"></i> Arenales 284</li>
           <li class="footer__lista">Concon. Valparaíso, Chile.</li>
         </div>
         <div class="footer__div">
+            <!-- Información de contacto -->
           <li class="footer__lista"><i class="fas fa-phone"></i> Contacto:</li>
           <li class="footer__lista">+56933527559</li>
         </div>
         <div class="footer__div">
+                <!-- Información de contacto -->
           <li class="footer__lista"><i class="fab fa-instagram"></i>Instagram:</li>
           <li class="footer__lista">@decoraw</li>
         </div>
       </footer>
 
+          <!-- Script de Bootstrap -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
+          <!-- Botón de WhatsApp -->
       <div class="whatsapp-sticky">
         <a href="https://api.whatsapp.com/send?phone=56933527559&text=Hola,%20estoy%20interesado%20en%20sus%20muebles" target="_blank">
             <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
