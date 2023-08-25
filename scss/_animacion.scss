@@ -1,0 +1,60 @@
+.subrallado{
+    width: 500px;
+    height: 1px;
+    background-color: black;
+    border-radius: 0%;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+@for $iterador from 1 through 1 {
+
+    .subrallado-#{$iterador}{
+        animation-name: animacion#{$iterador};
+
+        @keyframes animacion#{$iterador}{
+            
+            100%{
+                transform: translate(50% * $iterador);
+            }
+         } 
+        
+    }
+}
+
+$transition-duration: 0.3s;
+$scale-factor: 1.2;
+
+.header__texto {
+    transition: transform $transition-duration ease; 
+}
+
+.header__texto:hover {
+    transform: scale($scale-factor); 
+}
+
+.nav__item {
+    transition: transform $transition-duration ease;
+}
+
+.nav__item:hover {
+transform: scale($scale-factor);
+}
+
+.footer__lista{
+    transition: transform $transition-duration ease;
+}
+
+.footer__lista:hover {
+    transform: scale($scale-factor);
+}
+
+.grilla__boton{
+    transition: transform $transition-duration ease;
+}
+
+.grilla__boton:hover{
+    transform: scale($scale-factor);
+}

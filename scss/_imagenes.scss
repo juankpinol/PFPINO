@@ -1,0 +1,23 @@
+.card{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+    .img{
+        border-radius: 5px;
+        border: 1px solid;
+    }
+}
+
+.foto__taller{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
+    &__foto{
+      width: 300px;
+      
+    }
+}

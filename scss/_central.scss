@@ -1,0 +1,48 @@
+@use 'mixinfunc';
+
+@mixin arreglar-imagen{
+    background:{
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+}
+
+.central{
+
+    &__container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(#000000a9,#00000093), url(../multimedia/img/fondo_carpintero.jpg);
+    margin: 20px auto;
+
+
+    @include arreglar-imagen;
+    }
+    
+    &__textos{
+        width: 100%;
+        max-width: 1200px;
+        color: #fff;
+    }
+
+    &__titulo{
+        font-size: mixinfunc.pixeles-rem(40);
+        margin-bottom: mixinfunc.pixeles-rem(10);
+    }
+
+    &__parrafo{
+        font-size: mixinfunc.pixeles-rem(18);
+    }
+
+    &__mapa{
+        width: 100%;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
